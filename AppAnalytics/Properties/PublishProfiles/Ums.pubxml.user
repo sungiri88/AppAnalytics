@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_Data/AppStore.mdf">
+      <publishTime>04/07/2016 23:43:39</publishTime>
+    </File>
+    <File Include="App_Data/AppStore_log.ldf">
+      <publishTime>04/07/2016 23:43:39</publishTime>
+    </File>
+    <File Include="bin/AppAnalytics.dll">
+      <publishTime>04/07/2016 23:43:35</publishTime>
+    </File>
+    <File Include="bin/Excel.dll">
+      <publishTime>04/04/2016 19:35:25</publishTime>
+    </File>
+    <File Include="bin/ICSharpCode.SharpZipLib.dll">
+      <publishTime>04/04/2016 19:35:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>04/02/2016 22:15:09</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>04/02/2016 22:15:09</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>04/02/2016 22:15:10</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>04/02/2016 22:15:11</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>04/02/2016 22:15:12</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>04/02/2016 22:15:11</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationBlocks.Data.dll">
+      <publishTime>04/03/2016 14:55:15</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>04/02/2016 22:15:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>04/02/2016 22:15:03</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>04/03/2016 11:55:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>04/02/2016 22:15:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>04/02/2016 22:15:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>04/02/2016 22:15:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>04/02/2016 22:15:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>04/02/2016 22:15:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>04/02/2016 22:15:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>04/02/2016 22:15:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>04/02/2016 22:15:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>04/02/2016 22:15:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>04/02/2016 22:15:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>04/02/2016 22:15:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>04/02/2016 22:15:02</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>04/03/2016 11:56:07</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>04/03/2016 11:56:09</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>04/03/2016 11:56:12</publishTime>
+    </File>
+    <File Include="bootstrap/css/bootstrap-theme.min.css">
+      <publishTime>11/24/2015 19:34:20</publishTime>
+    </File>
+    <File Include="bootstrap/css/bootstrap.min.css">
+      <publishTime>11/24/2015 19:34:20</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>11/24/2015 18:59:06</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>11/24/2015 18:59:06</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>11/24/2015 18:59:06</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>11/24/2015 18:59:06</publishTime>
+    </File>
+    <File Include="bootstrap/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>11/24/2015 18:59:06</publishTime>
+    </File>
+    <File Include="bootstrap/js/bootstrap.min.js">
+      <publishTime>11/24/2015 19:34:22</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>04/03/2016 12:06:22</publishTime>
+    </File>
+    <File Include="images/favicon.ico">
+      <publishTime>02/11/2016 14:32:32</publishTime>
+    </File>
+    <File Include="images/new-verizon-logo.jpg">
+      <publishTime>04/03/2016 08:02:15</publishTime>
+    </File>
+    <File Include="images/Sorting icons.psd">
+      <publishTime>02/11/2016 14:32:32</publishTime>
+    </File>
+    <File Include="images/sort_asc.png">
+      <publishTime>02/11/2016 14:32:32</publishTime>
+    </File>
+    <File Include="images/sort_asc_disabled.png">
+      <publishTime>02/11/2016 14:32:32</publishTime>
+    </File>
+    <File Include="images/sort_both.png">
+      <publishTime>02/11/2016 14:32:32</publishTime>
+    </File>
+    <File Include="images/sort_desc.png">
+      <publishTime>02/11/2016 14:32:32</publishTime>
+    </File>
+    <File Include="images/sort_desc_disabled.png">
+      <publishTime>02/11/2016 14:32:32</publishTime>
+    </File>
+    <File Include="images/star.png">
+      <publishTime>04/03/2016 10:32:49</publishTime>
+    </File>
+    <File Include="images/stars.svg">
+      <publishTime>11/01/2015 16:34:28</publishTime>
+    </File>
+    <File Include="images/Verizon_2015_logo_-vector.svg.png">
+      <publishTime>04/03/2016 20:07:50</publishTime>
+    </File>
+    <File Include="images/vzlogo_lg.png">
+      <publishTime>04/03/2016 20:09:21</publishTime>
+    </File>
+    <File Include="Index.html">
+      <publishTime>04/07/2016 23:35:04</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>04/04/2016 19:35:26</publishTime>
+    </File>
+    <File Include="scripts/custom/app.js">
+      <publishTime>04/07/2016 23:11:57</publishTime>
+    </File>
+    <File Include="scripts/custom/common.js">
+      <publishTime>04/07/2016 22:51:24</publishTime>
+    </File>
+    <File Include="scripts/datatable/jquery.dataTables.min.js">
+      <publishTime>02/11/2016 14:32:32</publishTime>
+    </File>
+    <File Include="scripts/jquery/dataTables.jqueryui.min.js">
+      <publishTime>02/11/2016 14:32:32</publishTime>
+    </File>
+    <File Include="scripts/jquery/jquery-1.12.2.min.js">
+      <publishTime>04/03/2016 06:56:05</publishTime>
+    </File>
+    <File Include="scripts/star/rating.js">
+      <publishTime>11/01/2015 16:34:28</publishTime>
+    </File>
+    <File Include="scripts/underscore/underscore-min.js">
+      <publishTime>04/05/2016 23:34:26</publishTime>
+    </File>
+    <File Include="styles/custom/styles.css">
+      <publishTime>04/03/2016 23:05:21</publishTime>
+    </File>
+    <File Include="styles/datatable/dataTables.jqueryui.min.css">
+      <publishTime>02/11/2016 14:32:32</publishTime>
+    </File>
+    <File Include="styles/datatable/jquery.dataTables.min.css">
+      <publishTime>04/07/2016 10:19:04</publishTime>
+    </File>
+    <File Include="styles/datatable/jquery.dataTables_themeroller.css">
+      <publishTime>04/07/2016 10:19:28</publishTime>
+    </File>
+    <File Include="styles/star/rating.min.css">
+      <publishTime>04/03/2016 09:23:06</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/06/2016 08:55:00</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

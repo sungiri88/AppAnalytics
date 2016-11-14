@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>App Analytics</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="scripts/jquery/jquery-1.12.2.min.js"></script>
+    <script src="scripts/datatable/jquery.dataTables.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+    <script src="scripts/underscore/underscore-min.js"></script>
+    <script src="scripts/star/rating.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.0.1/jquery.rateyo.min.js"></script>
+    <script src="scripts/custom/common.js"></script>
+    <script src="scripts/custom/app.js"></script>
+    <link href="bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="styles/datatable/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="styles/datatable/jquery.dataTables_themeroller.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.0.1/jquery.rateyo.min.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="styles/star/rating.min.css" rel="stylesheet" />
+    <link href="styles/custom/styles.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header>
+        <div class="container-fluid header-content">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#" style="padding-top: 7px;">
+                    <img width="150" class="img-responsive" src="images/vzlogo_lg.png" />
+                </a>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="section-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-lg-6">
+                        <div class="panel panel-primary">
+                            <!-- Default panel contents -->
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <span style="font-size:14px; padding-left: 8px">M-B mbrace - Apple</span>
+                                    <div style="float:right; padding-right:10px;">
+                                        <i class="fa fa-icon fa-home mbrace-apple-icon" data-target="#home" ></i>
+                                        <i class="fa fa-icon fa-line-chart mbrace-apple-icon" data-target="#charts" ></i>
+                                        <i class="fa fa-icon fa-comments mbrace-apple-icon" data-target="#applereviews" ></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="mbrace-apple" class="panel-body" >
+                                <div class="row hidethis" id="home" >
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 emptyRow">
+                                                Version
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 emptyRow">
+                                                <span id="version" class="text-info">7.2</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 emptyRow">
+                                                Release Date
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 emptyRow">
+                                                <span id="releaseDate" class="text-info">2016-01-09</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 emptyRow">
+                                                Rating
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 emptyRow">
+                                                <span id="starRating"></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 emptyRow">
+                                                Review Count
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 emptyRow">
+                                                <span id="reviewCount" class="text-info">1151</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 emptyRow">
+                                                Developed By
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 emptyRow">
+                                                <span id="developedBy" class="text-info">Verizon Telematics</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 emptyRow">
+                                                Email
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 emptyRow">
+                                                <span id="email" class="text-muted">appsupport@hughestelematics.com</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="charts" class="hidethis" style="display:none">
+                                <ul id="Charting" class="nav nav-tabs nav-justified">
+                                    <li class="active"><a data-toggle="tab" href="#AppleDaily">Daily</a></li>
+                                    <li><a data-toggle="tab" href="#AppleMonthly">Monthly</a></li>
+                                    <li><a data-toggle="tab" href="#AppleYearly">Yearly</a></li>
+                                    
+                                </ul>
+                                
+                                <div class="tab-content">
+                                    <div id="AppleMonthly" class="tab-pane fade in active">
+
+                                    </div>
+                                    <div id="AppleYearly" class="tab-pane fade" >
+
+                                    </div>
+                                    <div id="AppleDaily" class="tab-pane fade">
+
+                                    </div>
+                                </div>
+                                </div>
+                                <div id="applereviews" class="hidethis" style="display:none"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6">
+                        <div class="panel panel-primary">
+                            <!-- Default panel contents -->
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <span style="font-size:14px; padding-left: 8px">M-B mbrace - Android</span>
+                                    <div style="float:right; padding-right:10px;">
+                                        <i class="fa fa-icon fa-home mbrace-android-icon" data-target="#home2"></i>
+                                        <i class="fa fa-icon fa-line-chart mbrace-android-icon" data-target="#charts2"></i>
+                                        <i class="fa fa-icon fa-comments mbrace-android-icon" data-target="#androidreviews"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="mbrace-android" class="panel-body">
+                                <div class="row hidethis" id="home2" >
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 emptyRow">
+                                                Version
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 emptyRow">
+                                                <span id="version" class="text-info">7.1.1550.3</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 emptyRow">
+                                                Release Date
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 emptyRow">
+                                                <span id="releaseDate" class="text-info">2015-12-15</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 emptyRow">
+                                                Rating
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 emptyRow">
+                                                <span id="starRating2"></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 emptyRow">
+                                                Review Count
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 emptyRow">
+                                                <span id="reviewCount" class="text-info">629</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 emptyRow">
+                                                Developed By
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 emptyRow">
+                                                <span id="developedBy" class="text-info">Verizon Telematics</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 emptyRow">
+                                                Email
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 emptyRow">
+                                                <span id="email" class="text-muted">appsupport@hughestelematics.com</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="charts2" class="hidethis" style="display:none">
+                                    <ul id="Charting2" class="nav nav-tabs nav-justified">
+                                        <li class="active"><a data-toggle="tab" href="#AndroidDaily">Daily</a></li>
+                                        <li><a data-toggle="tab" href="#AndroidMonthy">Monthly</a></li>
+                                        <li><a data-toggle="tab" href="#AndroidYearly">Yearly</a></li>
+                                    </ul>
+
+                                    <div class="tab-content">
+                                        <div id="AndroidMonthly" class="tab-pane fade in active">
+
+                                        </div>
+                                        <div id="AndroidYearly" class="tab-pane fade">
+
+                                        </div>
+                                        <div id="AndroidDaily" class="tab-pane fade">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="androidreviews" class="hidethis" style="display:none;">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Default container contents -->
+        </div>
+        <!-- Default section contents -->
+
+    </section>
+    <footer></footer>
+</body>
+</html>
